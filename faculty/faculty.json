@@ -1,0 +1,210 @@
+[
+  {
+     "id": 1,
+    "name": "Dr.S.Karthigailakshmi",
+    "designation": "Head of the Department",
+    "image": "assets/img/faculty/karthigailakshmi.JPG",
+    "email": "hod.ece@ssmiet.ac.in",
+    "phone": "+91 94433 22110",
+    "research": "VLSI Design, Communication Networks, Embedded Systems",
+    "about": "Dedicated academician with 18 years of teaching experience. Her research focuses on energy-efficient VLSI systems and next-generation communication protocols.",
+    "scholar": "https://scholar.google.com/",
+    "irins": "https://www.irins.org/",
+    "resume_pdf": "assets/pdf/Karthigailakshmi_Profile.pdf",
+    "academic_identity": {
+      "AICTE_ID": "1-2233445566",
+      "Orcid_ID": "0000-0003-9876-4321",
+      "Scopus_ID": "57233445566",
+      "Vidwan_ID": "654321"
+    },
+    "education": [
+      "Ph.D. in VLSI Design – Anna University, 2015",
+      "M.E. in Communication Systems – Thiagarajar College of Engineering, 2007",
+      "B.E. in Electronics and Communication Engineering – SSMIET, 2003"
+    ],
+    "experience": [
+      "Head of Department, ECE – SSMIET (2018–Present)",
+      "Associate Professor, ECE – SSMIET (2015–2018)",
+      "Assistant Professor, ECE – SSM College of Engineering (2007–2015)"
+    ],
+    "achievements": [
+      "Received Best Researcher Award – SSMIET (2021)",
+      "Published 30+ International Journal Papers",
+      "Conducted 10+ AICTE/ISTE sponsored FDPs"
+    ],
+    "publications": {
+      "journals_scie": [
+        "Low Power VLSI Architectures – IEEE, 2023"
+      ],
+      "journals_other": [
+        "Adaptive Modulation for 5G Networks – Springer, 2022"
+      ],
+      "conferences_scopus": [],
+      "conferences_other": []
+    }
+  },
+
+  {
+       "id": 2,
+    "name": "Dr.M.Manikandan",
+    "designation": "Assistant Professor",
+    "image": "assets/img/faculty/Manikandan M.jpg",
+    "email": "manisece910@gmail.com",
+    "phone": "+91 98765 43210",
+    "research": "RF Systems, Electromagnetics, Antenna Design",
+    "about": "Dedicated academician with over 14 years of teaching and research experience in RF systems and antenna engineering. Focused on guiding innovative UG and PG projects and publishing impactful research papers in reputed journals.",
+    "scholar": "https://scholar.google.com/citations?user=cQyJv5AAAAAJ&hl=en",
+    "irins": "https://vidwan.inflibnet.ac.in/profile/186951",
+    "resume_pdf": "assets/pdf/Manikandan_Profile.pdf",
+    "academic_identity": {
+      "AICTE_ID": "1-7528793065",
+      "Orcid_ID": "0000-0002-9834-2839",
+      "Scopus_ID": "57219859638",
+      "Vidwan_ID": "186951"
+    },
+    "education": [
+      "Ph.D – Information and Communication Engineering, Anna University, Chennai",
+      "M.E – Applied Electronics, Anna University, Trichy",
+      "B.E – Electronics and Communication Engineering, Anna University, Chennai"
+    ],
+    "experience": [
+      "Assistant Professor, Department of ECE, SSMIET – 14.3 Years"
+    ],
+    "achievements": [
+      "Published 2 SCI/SCIE indexed journal papers and 5 others",
+      "Presented 8 conference papers (4 Scopus indexed, 4 others)",
+      "Guided 16 UG and 2 PG projects",
+      "Filed 1 Patent",
+      "Member of IETE, ISTE, and IAENG"
+    ],
+    "publications": {
+      "journals_scie": [
+        "‘Enhanced Performance of Hybrid Dielectric Resonator Antenna With Hexagonal Ring Patch and Ground Slot for Multiband Operation in 5G Wireless Communication’, Technical Gazette, 2025",
+        "‘A Compact Penta-Band Low-SAR Antenna Loaded with Split-Ring Resonator for Mobile Applications’, IJAP, 2022"
+      ],
+      "journals_other": [
+        "‘Design and Fabrication of Double C Dual Band Slotted Microstrip Antenna For 5G Technologies’, IJETIR, 2020",
+        "‘Design of Slot Antenna with Defected Ground Structure For Wimax Application’, IJETIR, 2020",
+        "‘Design of Implantable Antenna for Patient Monitoring System’, IJETIR, 2018"
+      ],
+      "conferences_scopus": [
+        "‘Textile Substrate Materials for Wearable Antenna Applications’, IEEE ICACCS, 2024",
+        "‘Performance Analysis of Textile Substrates Adopted in Wearable Antennas’, IEEE APCI, 2024",
+        "‘Viable Methods Adopted for Reducing SAR Value in Mobile Phone Antenna’, ETBS Springer, 2023"
+      ],
+      "conferences_other": [
+        "‘Hepta Antenna for Mobile Phones’, Christian College, 2012",
+        "‘Design of Effective Implantable Antenna with Reduction in Cost and Size’, RTN2C PSNA College, 2017"
+      ]
+    }
+  },
+
+  {
+    "id": 3,
+    "name": "Dr.R.Carolpraveen",
+    "designation": "Assistant Professor",
+    "image": "assets/img/faculty/carol.jpg",
+    "email": "manisece910@gmail.com",
+    "phone": "+91 98765 43210",
+    "research": "RF Systems, Electromagnetics, Antenna Design",
+    "about": "Dedicated academician with over 14 years of teaching and research experience in RF systems and antenna engineering. Focused on guiding innovative UG and PG projects and publishing impactful research papers in reputed journals.",
+    "scholar": "https://scholar.google.com/citations?user=cQyJv5AAAAAJ&hl=en",
+    "irins": "https://vidwan.inflibnet.ac.in/profile/186951",
+    "resume_pdf": "assets/pdf/Manikandan_Profile.pdf",
+    "academic_identity": {
+      "AICTE_ID": "1-7528793065",
+      "Orcid_ID": "0000-0002-9834-2839",
+      "Scopus_ID": "57219859638",
+      "Vidwan_ID": "186951"
+    },
+    "education": [
+      "Ph.D – Information and Communication Engineering, Anna University, Chennai",
+      "M.E – Applied Electronics, Anna University, Trichy",
+      "B.E – Electronics and Communication Engineering, Anna University, Chennai"
+    ],
+    "experience": [
+      "Assistant Professor, Department of ECE, SSMIET – 14.3 Years"
+    ],
+    "achievements": [
+      "Published 2 SCI/SCIE indexed journal papers and 5 others",
+      "Presented 8 conference papers (4 Scopus indexed, 4 others)",
+      "Guided 16 UG and 2 PG projects",
+      "Filed 1 Patent",
+      "Member of IETE, ISTE, and IAENG"
+    ],
+    "publications": {
+      "journals_scie": [
+        "‘Enhanced Performance of Hybrid Dielectric Resonator Antenna With Hexagonal Ring Patch and Ground Slot for Multiband Operation in 5G Wireless Communication’, Technical Gazette, 2025",
+        "‘A Compact Penta-Band Low-SAR Antenna Loaded with Split-Ring Resonator for Mobile Applications’, IJAP, 2022"
+      ],
+      "journals_other": [
+        "‘Design and Fabrication of Double C Dual Band Slotted Microstrip Antenna For 5G Technologies’, IJETIR, 2020",
+        "‘Design of Slot Antenna with Defected Ground Structure For Wimax Application’, IJETIR, 2020",
+        "‘Design of Implantable Antenna for Patient Monitoring System’, IJETIR, 2018"
+      ],
+      "conferences_scopus": [
+        "‘Textile Substrate Materials for Wearable Antenna Applications’, IEEE ICACCS, 2024",
+        "‘Performance Analysis of Textile Substrates Adopted in Wearable Antennas’, IEEE APCI, 2024",
+        "‘Viable Methods Adopted for Reducing SAR Value in Mobile Phone Antenna’, ETBS Springer, 2023"
+      ],
+      "conferences_other": [
+        "‘Hepta Antenna for Mobile Phones’, Christian College, 2012",
+        "‘Design of Effective Implantable Antenna with Reduction in Cost and Size’, RTN2C PSNA College, 2017"
+      ]
+    }
+  },
+  {
+ "id": 4,
+    "name": "Dr.R.Senthil Kumar",
+    "designation": "Assistant Professor",
+    "image": "assets/img/faculty/senthil kumar R.jpg",
+    "email": "manisece910@gmail.com",
+    "phone": "+91 98765 43210",
+    "research": "RF Systems, Electromagnetics, Antenna Design",
+    "about": "Dedicated academician with over 14 years of teaching and research experience in RF systems and antenna engineering. Focused on guiding innovative UG and PG projects and publishing impactful research papers in reputed journals.",
+    "scholar": "https://scholar.google.com/citations?user=cQyJv5AAAAAJ&hl=en",
+    "irins": "https://vidwan.inflibnet.ac.in/profile/186951",
+    "resume_pdf": "assets/pdf/Manikandan_Profile.pdf",
+    "academic_identity": {
+      "AICTE_ID": "1-7528793065",
+      "Orcid_ID": "0000-0002-9834-2839",
+      "Scopus_ID": "57219859638",
+      "Vidwan_ID": "186951"
+    },
+    "education": [
+      "Ph.D – Information and Communication Engineering, Anna University, Chennai",
+      "M.E – Applied Electronics, Anna University, Trichy",
+      "B.E – Electronics and Communication Engineering, Anna University, Chennai"
+    ],
+    "experience": [
+      "Assistant Professor, Department of ECE, SSMIET – 14.3 Years"
+    ],
+    "achievements": [
+      "Published 2 SCI/SCIE indexed journal papers and 5 others",
+      "Presented 8 conference papers (4 Scopus indexed, 4 others)",
+      "Guided 16 UG and 2 PG projects",
+      "Filed 1 Patent",
+      "Member of IETE, ISTE, and IAENG"
+    ],
+    "publications": {
+      "journals_scie": [
+        "‘Enhanced Performance of Hybrid Dielectric Resonator Antenna With Hexagonal Ring Patch and Ground Slot for Multiband Operation in 5G Wireless Communication’, Technical Gazette, 2025",
+        "‘A Compact Penta-Band Low-SAR Antenna Loaded with Split-Ring Resonator for Mobile Applications’, IJAP, 2022"
+      ],
+      "journals_other": [
+        "‘Design and Fabrication of Double C Dual Band Slotted Microstrip Antenna For 5G Technologies’, IJETIR, 2020",
+        "‘Design of Slot Antenna with Defected Ground Structure For Wimax Application’, IJETIR, 2020",
+        "‘Design of Implantable Antenna for Patient Monitoring System’, IJETIR, 2018"
+      ],
+      "conferences_scopus": [
+        "‘Textile Substrate Materials for Wearable Antenna Applications’, IEEE ICACCS, 2024",
+        "‘Performance Analysis of Textile Substrates Adopted in Wearable Antennas’, IEEE APCI, 2024",
+        "‘Viable Methods Adopted for Reducing SAR Value in Mobile Phone Antenna’, ETBS Springer, 2023"
+      ],
+      "conferences_other": [
+        "‘Hepta Antenna for Mobile Phones’, Christian College, 2012",
+        "‘Design of Effective Implantable Antenna with Reduction in Cost and Size’, RTN2C PSNA College, 2017"
+      ]
+    }
+  }
+]

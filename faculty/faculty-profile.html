@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faculty Profile | SSMIET ECE</title>
+
+  <!-- Vendor CSS -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="../assets/css/main.css" rel="stylesheet" />
+  <link href="../assets/css/faculty-profile.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header id="header" class="header sticky-top">
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center">
+            <a href="https://ssmiet.ac.in">www.ssmiet.ac.in</a>
+          </i>
+          <i class="bi bi-phone d-flex align-items-center ms-4">
+            <span>0451 244 8800 - 899</span>
+          </i>
+        </div>
+      </div>
+    </div>
+
+    <div class="branding d-flex align-items-center">
+      <div class="container d-flex align-items-center justify-content-between">
+        <a href="../index.html" class="logo d-flex align-items-center">
+          <img src="../assets/img/logo.png" alt="Logo" />
+          <h1 class="sitename">SSMIET</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="../index.html#home">Home</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="faculty.html" class="active">Faculty & Staff</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- FACULTY PROFILE -->
+  <section class="faculty-profile py-5" id="profile-container">
+    <div class="text-center text-muted py-5">Loading Profile...</div>
+  </section>
+
+  <!-- SCROLL TO TOP BUTTON -->
+  <button type="button" id="scrollTopBtn" class="btn btn-primary rounded-circle">
+    <i class="bi bi-arrow-up-short"></i>
+  </button>
+
+  <!-- FOOTER -->
+  <footer id="footer" class="footer">
+    <div class="container text-center mt-4">
+      <p>© <strong>SSMIET</strong> | Department of ECE</p>
+      <div class="credits">
+        Designed by
+        <a href="https://www.linkedin.com/in/clement-savari-doss">Clement Savari Doss</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vendor JS -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/js/main.js"></script>
+
+  <!-- Faculty Data -->
+  <script>
+    const facultyData = [
+      {
+        id: 1,
+        name: "Dr. S. Karthigailakshmi",
+        designation: "Head of the Department",
+        image: "assets/img/faculty/karthigailakshmi.JPG",
+        email: "hod.ece@ssmiet.ac.in",
+        phone: "+91 94433 22110",
+        research: "VLSI Design, Communication Networks, Embedded Systems",
+        about:
+          "Dedicated academician with 18 years of teaching experience. Her research focuses on energy-efficient VLSI systems and next-generation communication protocols.",
+        academic_identity: {
+          AICTE_ID: "1-2233445566",
+          Orcid_ID: "0000-0003-9876-4321",
+          Scopus_ID: "57233445566",
+          Google_Scholar_ID: "https://scholar.google.com/",
+          Vidwan_ID: "https://www.irins.org/"
+        },
+        education: [
+          "Ph.D. in VLSI Design – Anna University, 2015",
+          "M.E. in Communication Systems – Thiagarajar College of Engineering, 2007",
+          "B.E. in Electronics and Communication Engineering – SSMIET, 2003"
+        ],
+        experience: [
+          "Head of Department, ECE – SSMIET (2018–Present)",
+          "Associate Professor, ECE – SSMIET (2015–2018)",
+          "Assistant Professor, ECE – SSM College of Engineering (2007–2015)"
+        ],
+        achievements: [
+          "Received Best Researcher Award – SSMIET (2021)",
+          "Published 30+ International Journal Papers",
+          "Conducted 10+ AICTE/ISTE sponsored FDPs"
+        ],
+        publications: {}
+      },
+     
+      {
+        id: 2,
+        name: "Dr. M. Manikandan",
+        designation: "Assistant Professor",
+        image: "assets/img/faculty/Manikandan M.jpg",
+        email: "manisece910@gmail.com",
+        phone: "+91 98765 43210",
+        research: "RF Systems, Electromagnetics, Antenna Design",
+        about:
+          "Dedicated academician with over 14 years of teaching and research experience in RF systems and antenna engineering.",
+        academic_identity: {
+          AICTE_ID: "1-7528793065",
+          Orcid_ID: "0000-0002-9834-2839",
+          Scopus_ID: "57219859638",
+          Google_Scholar_ID:
+            "https://scholar.google.com/citations?user=cQyJv5AAAAAJ&hl=en",
+          Vidwan_ID: "https://vidwan.inflibnet.ac.in/profile/186951"
+        },
+        education: [
+          "Ph.D – Information and Communication Engineering, Anna University, Chennai",
+          "M.E – Applied Electronics, Anna University, Trichy",
+          "B.E – Electronics and Communication Engineering, Anna University, Chennai"
+        ],
+        experience: ["Assistant Professor, Department of ECE, SSMIET – 14.3 Years"],
+        achievements: [
+          "Published 2 SCI/SCIE indexed journal papers and 5 others",
+          "Presented 8 conference papers (4 Scopus indexed, 4 others)",
+          "Guided 16 UG and 2 PG projects",
+          "Filed 1 Patent",
+          "Member of IETE, ISTE, and IAENG"
+        ],
+        publications: {
+          journals_scie: [
+            "Enhanced Performance of Hybrid Dielectric Resonator Antenna – Technical Gazette, 2025",
+            "Compact Penta-Band Low-SAR Antenna – IJAP, 2022"
+          ],
+          journals_other: [
+            "Design of Slot Antenna with Defected Ground Structure – IJETIR, 2020",
+            "Design of Implantable Antenna for Patient Monitoring – IJETIR, 2018"
+          ],
+          conferences_scopus: [
+            "Textile Substrate Materials for Wearable Antenna Applications – IEEE ICACCS, 2024",
+            "Performance Analysis of Textile Substrates – IEEE APCI, 2024",
+            "Viable Methods for Reducing SAR Value – Springer ETBS, 2023"
+          ],
+          conferences_other: [
+            "Hepta Antenna for Mobile Phones – Christian College, 2012",
+            "Design of Effective Implantable Antenna – RTN2C 2017"
+          ]
+        }
+      },
+      
+        {
+        id: 3,
+        name: "Dr. R. Carolpraveen",
+        designation: "Assistant Professor",
+        image: "assets/img/faculty/carol.jpg",
+        email: "manisece910@gmail.com",
+        phone: "+91 98765 43210",
+        research: "RF Systems, Electromagnetics, Antenna Design",
+        about:
+          "Dedicated academician with over 14 years of teaching and research experience in RF systems and antenna engineering.",
+        academic_identity: {
+          AICTE_ID: "1-7528793065",
+          Orcid_ID: "0000-0002-9834-2839",
+          Scopus_ID: "57219859638",
+          Google_Scholar_ID:
+            "https://scholar.google.com/citations?user=cQyJv5AAAAAJ&hl=en",
+          Vidwan_ID: "https://vidwan.inflibnet.ac.in/profile/186951"
+        },
+        education: [
+          "Ph.D – Information and Communication Engineering, Anna University, Chennai",
+          "M.E – Applied Electronics, Anna University, Trichy",
+          "B.E – Electronics and Communication Engineering, Anna University, Chennai"
+        ],
+        experience: ["Assistant Professor, Department of ECE, SSMIET – 14.3 Years"],
+        achievements: [
+          "Published 2 SCI/SCIE indexed journal papers and 5 others",
+          "Presented 8 conference papers (4 Scopus indexed, 4 others)",
+          "Guided 16 UG and 2 PG projects",
+          "Filed 1 Patent",
+          "Member of IETE, ISTE, and IAENG"
+        ],
+        publications: {
+          journals_scie: [
+            "Enhanced Performance of Hybrid Dielectric Resonator Antenna – Technical Gazette, 2025",
+            "Compact Penta-Band Low-SAR Antenna – IJAP, 2022"
+          ],
+          journals_other: [
+            "Design of Slot Antenna with Defected Ground Structure – IJETIR, 2020",
+            "Design of Implantable Antenna for Patient Monitoring – IJETIR, 2018"
+          ],
+          conferences_scopus: [
+            "Textile Substrate Materials for Wearable Antenna Applications – IEEE ICACCS, 2024",
+            "Performance Analysis of Textile Substrates – IEEE APCI, 2024",
+            "Viable Methods for Reducing SAR Value – Springer ETBS, 2023"
+          ],
+          conferences_other: [
+            "Hepta Antenna for Mobile Phones – Christian College, 2012",
+            "Design of Effective Implantable Antenna – RTN2C 2017"
+          ]
+        }
+      },
+      {
+        id: 4,
+        name: "Dr. R. Senthil Kumar",
+        designation: "Assistant Professor",
+        image: "assets/img/faculty/senthil kuma R.jpg",
+        email: "manisece910@gmail.com",
+        phone: "+91 98765 43210",
+        research: "RF Systems, Electromagnetics, Antenna Design",
+        about:
+          "Dedicated academician with over 14 years of teaching and research experience in RF systems and antenna engineering.",
+        academic_identity: {
+          AICTE_ID: "1-7528793065",
+          Orcid_ID: "0000-0002-9834-2839",
+          Scopus_ID: "57219859638",
+          Google_Scholar_ID:
+            "https://scholar.google.com/citations?user=cQyJv5AAAAAJ&hl=en",
+          Vidwan_ID: "https://vidwan.inflibnet.ac.in/profile/186951"
+        },
+        education: [
+          "Ph.D – Information and Communication Engineering, Anna University, Chennai",
+          "M.E – Applied Electronics, Anna University, Trichy",
+          "B.E – Electronics and Communication Engineering, Anna University, Chennai"
+        ],
+        experience: ["Assistant Professor, Department of ECE, SSMIET – 14.3 Years"],
+        achievements: [
+          "Published 2 SCI/SCIE indexed journal papers and 5 others",
+          "Presented 8 conference papers (4 Scopus indexed, 4 others)",
+          "Guided 16 UG and 2 PG projects",
+          "Filed 1 Patent",
+          "Member of IETE, ISTE, and IAENG"
+        ],
+        publications: {
+          journals_scie: [
+            "Enhanced Performance of Hybrid Dielectric Resonator Antenna – Technical Gazette, 2025",
+            "Compact Penta-Band Low-SAR Antenna – IJAP, 2022"
+          ],
+          journals_other: [
+            "Design of Slot Antenna with Defected Ground Structure – IJETIR, 2020",
+            "Design of Implantable Antenna for Patient Monitoring – IJETIR, 2018"
+          ],
+          conferences_scopus: [
+            "Textile Substrate Materials for Wearable Antenna Applications – IEEE ICACCS, 2024",
+            "Performance Analysis of Textile Substrates – IEEE APCI, 2024",
+            "Viable Methods for Reducing SAR Value – Springer ETBS, 2023"
+          ],
+          conferences_other: [
+            "Hepta Antenna for Mobile Phones – Christian College, 2012",
+            "Design of Effective Implantable Antenna – RTN2C 2017"
+          ]
+        }
+      },
+    ];
+
+    document.addEventListener("DOMContentLoaded", () => {
+      AOS.init({ duration: 800, once: true });
+      const params = new URLSearchParams(window.location.search);
+      const id = parseInt(params.get("id"));
+      const container = document.getElementById("profile-container");
+      const f = facultyData.find((x) => x.id === id);
+
+      if (!f) {
+        container.innerHTML = `
+          <div class="text-center py-5">
+            <h4>No faculty selected.</h4>
+            <a href="faculty.html" class="btn btn-primary rounded-pill mt-3">← Back</a>
+          </div>`;
+        return;
+      }
+
+      const academicHTML = `
+        <div class="academic-badges mt-3">
+          <a href="${f.academic_identity.Google_Scholar_ID}" target="_blank" class="btn btn-outline-primary btn-sm"><i class="bi bi-google"></i> Scholar</a>
+          <a href="https://orcid.org/${f.academic_identity.Orcid_ID}" target="_blank" class="btn btn-outline-success btn-sm"><i class="bi bi-link-45deg"></i> ORCID</a>
+          <a href="https://www.scopus.com/authid/detail.uri?authorId=${f.academic_identity.Scopus_ID}" target="_blank" class="btn btn-outline-danger btn-sm"><i class="bi bi-journal-text"></i> Scopus</a>
+          <a href="${f.academic_identity.Vidwan_ID}" target="_blank" class="btn btn-outline-warning btn-sm"><i class="bi bi-book"></i> Vidwan</a>
+          <span class="btn btn-outline-info btn-sm"><i class="bi bi-person-badge"></i> AICTE: ${f.academic_identity.AICTE_ID}</span>
+        </div>`;
+
+      function renderAccordion(title, items) {
+        if (!items || !items.length) return "";
+        const id = title.replace(/\s+/g, "_");
+        return `
+          <div class="accordion-item shadow-sm">
+            <h2 class="accordion-header" id="${id}">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_${id}">
+                ${title}
+              </button>
+            </h2>
+            <div id="collapse_${id}" class="accordion-collapse collapse" data-bs-parent="#publicationsAccordion">
+              <div class="accordion-body"><ul>${items.map((i) => `<li>${i}</li>`).join("")}</ul></div>
+            </div>
+          </div>`;
+      }
+
+      container.innerHTML = `
+        <div class="container profile-container">
+          <div class="profile-card" data-aos="fade-up">
+            <div class="row g-4 align-items-center">
+              <div class="col-md-4 text-center">
+                <img src="../${f.image}" alt="${f.name}" class="img-fluid rounded-3 shadow-sm" style="max-height:320px;">
+                ${academicHTML}
+              </div>
+              <div class="col-md-8">
+                <h2 class="fw-bold text-dark">${f.name}</h2>
+                <h5 class="text-primary mb-3">${f.designation}</h5>
+                <p class="text-muted">${f.about}</p>
+                <ul class="list-unstyled mb-3">
+                  <li><strong>Email:</strong> ${f.email}</li>
+                  <li><strong>Phone:</strong> ${f.phone}</li>
+                  <li><strong>Research Areas:</strong> ${f.research}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="row gy-4 mt-5" data-aos="fade-up">
+            <div class="col-md-4"><div class="info-card"><h5><i class="bi bi-mortarboard"></i> Education</h5><ul>${f.education.map(e => `<li>${e}</li>`).join("")}</ul></div></div>
+            <div class="col-md-4"><div class="info-card"><h5><i class="bi bi-briefcase"></i> Experience</h5><ul>${f.experience.map(e => `<li>${e}</li>`).join("")}</ul></div></div>
+            <div class="col-md-4"><div class="info-card"><h5><i class="bi bi-award"></i> Achievements</h5><ul>${f.achievements.map(e => `<li>${e}</li>`).join("")}</ul></div></div>
+          </div>
+
+          <div class="accordion mt-5" id="publicationsAccordion" data-aos="fade-up">
+            ${renderAccordion("Journals (SCIE/SCOPUS Indexed)", f.publications.journals_scie)}
+            ${renderAccordion("Other Journals", f.publications.journals_other)}
+            ${renderAccordion("Conferences (Scopus Indexed)", f.publications.conferences_scopus)}
+            ${renderAccordion("Other Conferences", f.publications.conferences_other)}
+          </div>
+
+          <div class="text-center mt-5">
+            <a href="faculty.html" class="btn btn-primary rounded-pill px-4">← Back to Faculty List</a>
+          </div>
+        </div>`;
+    });
+
+    // Scroll-to-top functionality
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+    window.addEventListener("scroll", () => {
+      scrollTopBtn.style.display = window.scrollY > 300 ? "block" : "none";
+    });
+    scrollTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>

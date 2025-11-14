@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ECE Faculty | SSMIET</title>
+
+  <!-- Vendor & Main CSS -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <link href="../assets/css/main.css" rel="stylesheet" />
+  <link href="../assets/css/faculty.css" rel="stylesheet" />
+</head>
+
+<body class="index-page">
+
+  <!-- HEADER -->
+  <header id="header" class="header sticky-top">
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a href="https://ssmiet.ac.in">www.ssmiet.ac.in</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>0451 244 8800 - 899</span></i>
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="https://twitter.com/ssmiet" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://www.facebook.com/ssmdindigul/" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/lifeatssm" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/ssmiet-dgl/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="branding d-flex align-items-center">
+      <div class="container d-flex align-items-center justify-content-between">
+        <a href="../index.html" class="logo d-flex align-items-center">
+          <img src="../assets/img/logo.png" alt="" />
+          <h1 class="sitename">SSMIET</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="../index.html#home">Home</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#testimonials">Alumni</a></li>
+            <li><a href="../portfolio-details.html">Gallery</a></li>
+            <li><a href="faculty.html" class="active">Faculty & Staff</a></li>
+            <li><a href="../vac.html">VAC</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- FACULTY SECTION -->
+  <section id="team" class="team-section py-5">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Our Faculty</h2>
+        <p>Department of Electronics and Communication Engineering</p>
+      </div>
+
+      <!-- Search / Filter -->
+      <div class="row mb-4">
+        <div class="col-md-6 mx-auto">
+          <input type="text" id="facultySearch" class="form-control rounded-pill shadow-sm"
+                 placeholder="🔍 Search by name or designation…" />
+        </div>
+      </div>
+
+      <div id="faculty-container" class="faculty-container"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer" class="footer">
+    <div class="container text-center mt-4">
+      <p>© <strong>SSMIET</strong> | Department of ECE</p>
+      <div class="credits">Designed by <a href="https://www.linkedin.com/in/clement-savari-doss">Clement Savari Doss</a></div>
+    </div>
+  </footer>
+
+  <!-- Vendor JS -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+
+  <!-- Inline Faculty Data (Offline Safe) -->
+  <script>
+    const facultyData = [
+      {
+         id: 1,
+        name: "Dr.S.Karthigailakshmi",
+        designation: "Head of the Department",
+        image: "assets/img/faculty/karthigailakshmi.JPG",
+        email: "hod.ece@ssmiet.ac.in",
+        phone: "+91 94433 22110",
+        research: "VLSI Design, Communication Networks, Embedded Systems"
+      },
+      {
+         id: 2,
+        name: "Dr.M.Manikandan",
+        designation: "Assistant Professor",
+        image: "assets/img/faculty/Manikandan M.jpg",
+        email: "manisece910@gmail.com",
+        phone: "+91 98765 43210",
+        research: "RF Systems, Electromagnetics, Antenna Design"
+      },
+      {
+        id: 3,
+        name: "Dr.R.Carolpraveen",
+        designation: "Assistant Professor",
+        image: "assets/img/faculty/carol.jpg",
+        email: "manisece910@gmail.com",
+        phone: "+91 98765 43210",
+        research: "RF Systems, Electromagnetics, Antenna Design"
+      },
+      {
+        id: 4,
+        name: "Dr. R. Senthil Kumar",
+        designation: "Assistant Professor",
+        image: "assets/img/faculty/senthil kumar R.jpg",
+        email: "",
+        phone: "",
+        research: "",
+      },
+      
+    ];
+  </script>
+
+  <!-- Faculty Rendering Script -->
+  <script>
+    AOS.init();
+
+    const container = document.getElementById("faculty-container");
+    const searchBox = document.getElementById("facultySearch");
+
+    function renderFaculty(list) {
+      container.innerHTML = "";
+      if (!list.length) {
+        container.innerHTML = "<p class='text-center text-muted py-4'>No faculty found.</p>";
+        return;
+      }
+      list.forEach((member, i) => {
+        const card = document.createElement("div");
+        card.className = "faculty-card";
+        card.setAttribute("data-aos", "zoom-in-up");
+        card.setAttribute("data-aos-delay", i * 80);
+        card.innerHTML = `
+          <div class="member-img">
+            <img src="../${member.image}" alt="${member.name}" loading="lazy" />
+          </div>
+          <div class="member-info">
+            <h4>${member.name}</h4>
+            <span>${member.designation}</span>
+            <a href="faculty-profile.html?id=${member.id}" class="view-profile">View Profile</a>
+          </div>`;
+        container.appendChild(card);
+      });
+    }
+
+    renderFaculty(facultyData);
+
+    searchBox.addEventListener("keyup", e => {
+      const q = e.target.value.toLowerCase();
+      const filtered = facultyData.filter(f =>
+        f.name.toLowerCase().includes(q) ||
+        f.designation.toLowerCase().includes(q)
+      );
+      renderFaculty(filtered);
+    });
+  </script>
+</body>
+</html>

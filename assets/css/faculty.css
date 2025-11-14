@@ -1,0 +1,401 @@
+/* ==========================================================
+   FACULTY LIST PAGE — PERFECT IMAGE FIT & CLEAN RESPONSIVE DESIGN
+   Department of ECE | SSMIET
+   ========================================================== */
+
+/* Section Base */
+.team-section {
+  padding: 80px 0;
+  background: linear-gradient(180deg, #f8faff 0%, #eef4ff 100%);
+  overflow-x: hidden;
+}
+
+/* Section Title */
+.section-title h2 {
+  font-size: 34px;
+  font-weight: 700;
+  text-align: center;
+  color: #004aad;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.section-title p {
+  text-align: center;
+  color: #555;
+  margin-bottom: 45px;
+  font-size: 16px;
+}
+
+/* ==========================================================
+   FACULTY GRID
+   ========================================================== */
+.faculty-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  align-items: stretch;
+  padding: 0 20px;
+}
+
+/* ==========================================================
+   FACULTY CARD
+   ========================================================== */
+.faculty-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  border: 1px solid #e5e9f2;
+  position: relative;
+  cursor: pointer;
+}
+
+.faculty-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 45px rgba(0, 123, 255, 0.25);
+}
+/* ==========================================================
+   FACULTY LIST PAGE — FINAL RESPONSIVE & NEAT VERSION
+   Department of ECE | SSMIET
+   ========================================================== */
+
+/* ===== Section Base ===== */
+.team-section {
+  padding: 80px 0;
+  background: linear-gradient(180deg, #f8faff 0%, #eef4ff 100%);
+  overflow-x: hidden;
+}
+
+/* ===== Section Title ===== */
+.section-title h2 {
+  font-size: 34px;
+  font-weight: 700;
+  text-align: center;
+  color: #004aad;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.section-title p {
+  text-align: center;
+  color: #555;
+  margin-bottom: 45px;
+  font-size: 16px;
+}
+
+/* ==========================================================
+   FACULTY GRID — RESPONSIVE & CENTERED
+   ========================================================== */
+.faculty-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 28px;
+  justify-content: center;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ==========================================================
+   FACULTY CARD — BALANCED & NEAT
+   ========================================================== */
+.faculty-card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  border: 1px solid #e5e9f2;
+  cursor: pointer;
+  position: relative;
+}
+
+.faculty-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 123, 255, 0.2);
+}
+
+/* ==========================================================
+   FACULTY IMAGE — PERFECT FIT ACROSS DEVICES
+   ========================================================== */
+.faculty-card .member-img {
+  width: 100%;
+  aspect-ratio: 3 / 3.7; /* balanced portrait ratio */
+  overflow: hidden;
+  background: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #007bff15;
+}
+
+.faculty-card .member-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.faculty-card:hover .member-img img {
+  transform: scale(1.04);
+  filter: brightness(1.07);
+}
+
+/* ==========================================================
+   FACULTY INFO — CLEAN & COMPACT
+   ========================================================== */
+.faculty-card .member-info {
+  padding: 15px 10px 22px;
+  background: #fff;
+}
+
+.faculty-card .member-info h4 {
+  font-size: 16px;
+  color: #222;
+  font-weight: 600;
+  margin: 8px 0 3px;
+}
+
+.faculty-card .member-info span {
+  display: block;
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+/* ==========================================================
+   VIEW PROFILE BUTTON
+   ========================================================== */
+.faculty-card .view-profile {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.faculty-card .view-profile:hover {
+  background: linear-gradient(135deg, #0056b3, #0041a3);
+  transform: scale(1.05);
+}
+
+/* ==========================================================
+   CARD HOVER GLOW
+   ========================================================== */
+.faculty-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.15);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.faculty-card:hover::before {
+  opacity: 1;
+}
+
+/* ==========================================================
+   SMOOTH AOS FADE-UP
+   ========================================================== */
+[data-aos="fade-up"] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ==========================================================
+   RESPONSIVE GRID TUNING
+   ========================================================== */
+
+/* --- Large Screens (4 per row) --- */
+@media (min-width: 1200px) {
+  .faculty-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .faculty-card .member-img {
+    aspect-ratio: 3 / 3.6;
+  }
+}
+
+/* --- Laptops (3 per row) --- */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .faculty-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .faculty-card .member-img {
+    aspect-ratio: 3 / 3.8;
+  }
+}
+
+/* --- Tablets (2 per row) --- */
+@media (max-width: 991px) {
+  .faculty-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .faculty-card .member-img {
+    aspect-ratio: 3 / 4;
+  }
+}
+
+/* --- Mobiles (1 per row) --- */
+@media (max-width: 576px) {
+  .faculty-container {
+    grid-template-columns: 1fr;
+  }
+  .faculty-card .member-img {
+    aspect-ratio: 1 / 1;
+  }
+}
+
+/* ==========================================================
+   SOFT FLOAT ANIMATION
+   ========================================================== */
+@keyframes softFloat {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+.faculty-card:hover {
+  animation: softFloat 3s ease-in-out infinite;
+}
+
+
+/* ==========================================================
+   FACULTY INFO
+   ========================================================== */
+.faculty-card .member-info {
+  padding: 18px 15px 28px;
+  background: #fff;
+}
+
+.faculty-card .member-info h4 {
+  font-size: 18px;
+  color: #222;
+  font-weight: 600;
+  margin: 10px 0 6px;
+}
+
+.faculty-card .member-info span {
+  display: block;
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+/* ==========================================================
+   VIEW PROFILE BUTTON
+   ========================================================== */
+.faculty-card .member-info .view-profile {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.faculty-card .member-info .view-profile:hover {
+  background: linear-gradient(135deg, #0056b3, #0041a3);
+  transform: scale(1.07);
+}
+
+/* ==========================================================
+   HOVER GLOW
+   ========================================================== */
+.faculty-card:hover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(0, 123, 255, 0.2);
+  z-index: -1;
+  opacity: 0.6;
+  transition: opacity 0.4s ease;
+}
+
+/* ==========================================================
+   AOS FADE-UP ANIMATION
+   ========================================================== */
+[data-aos="fade-up"] {
+  opacity: 0;
+  transform: translateY(25px);
+  transition-property: opacity, transform;
+  transition-timing-function: ease-out;
+}
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ==========================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================== */
+@media (max-width: 1200px) {
+  .faculty-card .member-img {
+    height: 240px;
+  }
+}
+
+@media (max-width: 992px) {
+  .faculty-container {
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  }
+  .faculty-card .member-img {
+    height: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .faculty-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .faculty-card {
+    margin: 0 auto;
+  }
+  .faculty-card .member-img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .faculty-container {
+    grid-template-columns: 1fr;
+  }
+  .faculty-card .member-img {
+    height: 180px;
+  }
+}
+
+/* ==========================================================
+   FLOATING HOVER ANIMATION
+   ========================================================== */
+@keyframes softFloat {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+.faculty-card:hover {
+  animation: softFloat 3s ease-in-out infinite;
+}
